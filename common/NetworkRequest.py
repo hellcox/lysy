@@ -11,7 +11,6 @@ class NetworkRequest:
         self.cookies = None
         self.response = None
         self.token = None
-        self.laravel_session = ''
 
     # ****************************************************
 

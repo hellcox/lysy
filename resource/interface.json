@@ -1,5 +1,5 @@
 {
-	"entrance": [
+	"interfaces": [
 		{
 			"name": "重置密码",
 			"addr": "action/password_reset"

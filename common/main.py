@@ -8,15 +8,16 @@ class Main:
         self.r = NetworkRequest()
         self.interface = Tool.read_json('interface')
         self.api = Tool.read_json('api')
-        pass
-
-    def read(self):
-        pass
+        self.token = self.r.request_token()
 
     def run(self):
-        print(self.interface)
-        print(self.interface)
-        pass
+        for interface in self.interface['interfaces']:
+            action_file = Tool.read_json(interface['addr'])
+            actions = action_file['actions']
+            datas = action_file['data']
+            for action in actions:
+                print(action)
+
 
 
 if __name__ == '__main__':
