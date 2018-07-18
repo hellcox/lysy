@@ -1,0 +1,59 @@
+{
+	"login": {
+		"url": "/auth/login",
+		"method": "post",
+		"data": [
+			{
+				"name": "_token",
+				"type": 1,
+				"must": 1
+			},
+			{
+				"name": "user_name",
+				"type": 1,
+				"must": 1
+			},
+			{
+				"name": "password",
+				"type": 3,
+				"must": 1
+			},
+			{
+				"name": "remember",
+				"type": 1,
+				"must": 1
+			}
+		]
+	},
+	"logout": {
+		"url": "/auth/logout",
+		"method": "get",
+		"data": []
+	},
+	"password_reset": {
+		"url": "/password/reset",
+		"method": "post",
+		"data": [
+			{
+				"name": "_token",
+				"type": 1,
+				"must": 1
+			},
+			{
+				"name": "old_password",
+				"type": 3,
+				"must": 1
+			},
+			{
+				"name": "new_password",
+				"type": 3,
+				"must": 1
+			},
+			{
+				"name": "new_password_confirmation",
+				"type": 3,
+				"must": 1
+			}
+		]
+	}
+}

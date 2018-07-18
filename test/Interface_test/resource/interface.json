@@ -1,0 +1,11 @@
+{
+    "interfaces":[
+        {
+            "password_reset":"重置密码"
+        },
+
+        {
+            "password_reset":"重置密码"
+        }
+    ]
+}

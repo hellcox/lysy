@@ -1,0 +1,54 @@
+{
+  "interface_list": {
+    "password_reset":{
+      "url":"/password/reset",
+      "method":"post",
+      "data":[
+          {
+          "name":"_token" ,
+          "value_type": 1
+        },
+        {
+          "name":"old_password",
+          "value_type": 3
+        },
+        {
+          "name":"new_password",
+          "value_type": 3
+        },
+        {
+          "name":"new_password_confirmation",
+          "value_type": 3
+        }
+      ]
+    },
+
+    "login":{
+      "url":"/auth/login",
+      "method":"post",
+      "data":[
+          {
+          "name":"_token" ,
+          "value_type": 1
+        },
+        {
+          "name":"user_name",
+          "value_type": 3
+        },
+        {
+          "name":"password",
+          "value_type": 2
+        }
+      ]
+    },
+
+    "logout":{
+      "url":"/auth/logout",
+      "method":"post",
+      "data":[
+
+      ]
+    }
+
+  }
+}
